@@ -36,3 +36,9 @@ move_user = int(input('Какого юзера переместить в кон�
 user_list[move_user - 1], user_list[-1] = user_list[-1], user_list[move_user - 1]
 
 print(user_list)
+
+old = 0
+for user in user_list:
+    old += user['age']
+
+print(old / len(user_list))
